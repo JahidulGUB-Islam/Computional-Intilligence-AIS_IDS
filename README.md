@@ -50,8 +50,11 @@ bash
 ---
 📂 Dataset Setup
 Place datasets in Google Drive:
+
 /content/drive/MyDrive/Computational_Intelligence/NSL_KDD
+
 /content/drive/MyDrive/Computational_Intelligence/CICIoT2023
+
 /content/drive/MyDrive/Computational_Intelligence/UNSW_NB15
 
 Example:
@@ -95,11 +98,9 @@ Number of detectors: 1000
 Mutation factor: 0.08
 Self-distance threshold: 0.6
 
-🔹 Step 7: Create Hybrid Features:
+🔹 Step 7: Create Hybrid Features: PSO-selected features + AIS anomaly features
 
-PSO-selected features + AIS anomaly features
-
-🔹 Step 8: Train Models
+🔹 Step 8: Train Models:
 🧠 MLP
 🌲 Random Forest
 ⚡ XGBoost
@@ -108,7 +109,7 @@ PSO-selected features + AIS anomaly features
 
 🔹 Step 9: Perform 10-Fold Cross-Validation
 
-🔹 Step 10: Evaluate Performance
+🔹 Step 10: Evaluate Performance:
 Metrics:
 Accuracy
 Precision
@@ -118,11 +119,9 @@ ROC-AUC
 PR-AUC
 Confusion Matrix
 
-🔹 Step 11: Run SHAP Explainability
-Analyze feature contributions and model transparency.
+🔹 Step 11: Run SHAP Explainability: Analyze feature contributions and model transparency.
 
-🔹 Step 12: Save Results
-Output directory:
+🔹 Step 12: Save Results: Output directory
 
 ---
 🔁 Reproducibility
