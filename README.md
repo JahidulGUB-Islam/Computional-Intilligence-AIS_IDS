@@ -19,7 +19,8 @@ The framework is evaluated on benchmark IDS datasets including CICIoT2023, NSL-K
 ✅ Automatic Result Saving
 
 ---
-🖥️ Required Environment
+🖥️ Required Environment:
+
 Python 3.x
 
 Google Colab
