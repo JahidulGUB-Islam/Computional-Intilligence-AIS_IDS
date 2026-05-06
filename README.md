@@ -1,8 +1,10 @@
 🛡️ Intelligent Intrusion Detection System (IDS)
+
 📖 Overview
 This project implements an intelligent Intrusion Detection System (IDS) that combines Swarm Intelligence, Artificial Immune System (AIS), and Ensemble Learning for robust attack detection in network and IoT environments. The proposed framework uses a security-aware and class-aware Particle Swarm Optimization (PSO) algorithm for feature selection, an improved Negative Selection Algorithm (NSA) for anomaly detector generation, and multiple classifiers including MLP, Random Forest, and XGBoost.
 The framework is evaluated on benchmark IDS datasets including CICIoT2023, NSL-KDD, and UNSW-NB15. The system also integrates SHAP-based explainability for transparent and interpretable intrusion detection.
 ---
+
 ✨ Main Features
 ✅ Security-aware and class-aware PSO feature selection  
 ✅ Improved Negative Selection Algorithm (NSA)  
@@ -14,12 +16,14 @@ The framework is evaluated on benchmark IDS datasets including CICIoT2023, NSL-K
 ✅ SHAP Explainability  
 ✅ Confusion Matrix Visualization  
 ✅ Automatic Result Saving
+
 ---
 🖥️ Required Environment
 Python 3.x
 Google Colab
 GPU Runtime Recommended
 Google Drive Mounted
+
 ---
 📦 Required Dependencies
 ```python
@@ -36,6 +40,7 @@ Install missing packages:
 ```bash
 !pip install -q xgboost shap
 ```
+
 ---
 📂 Dataset Setup
 Place datasets in Google Drive:
@@ -134,6 +139,7 @@ tf.random.set_seed(SEED)
 ✅ Attack Detection Rate: 99.76%  
 ✅ Accuracy: 99.67%  
 ✅ Recall: 99.23%
+
 ---
 🔄 Project Workflow
 ```text
