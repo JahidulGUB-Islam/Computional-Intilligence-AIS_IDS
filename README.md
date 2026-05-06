@@ -61,9 +61,11 @@ NSL_KDD/
 └── KDDTest.csv
 ```
 ---
-🚀 Steps to Reproduce Results
+🚀 Steps to Reproduce Results:
+
 🔹 Step 1: Open the Colab Notebook
 Open the provided Colab notebook.
+
 🔹 Step 2: Mount Google Drive
 ```python
 from google.colab import drive
