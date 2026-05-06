@@ -32,7 +32,7 @@ Google Drive Mounted
 
 ---
 📦 Required Dependencies
-```python
+python
 numpy
 pandas
 matplotlib
@@ -41,72 +41,73 @@ scikit-learn
 tensorflow
 xgboost
 shap
-```
+
+---
 Install missing packages:
-```bash
+bash
 !pip install -q xgboost shap
-```
 
 ---
 📂 Dataset Setup
 Place datasets in Google Drive:
-```text
 /content/drive/MyDrive/Computational_Intelligence/NSL_KDD
 /content/drive/MyDrive/Computational_Intelligence/CICIoT2023
 /content/drive/MyDrive/Computational_Intelligence/UNSW_NB15
-```
+
 Example:
-```text
 NSL_KDD/
 ├── KDDTrain.csv
 └── KDDTest.csv
-```
+
 ---
 🚀 Steps to Reproduce Results:
 
 🔹 Step 1: Open the Colab Notebook
 Open the provided Colab notebook.
 
-🔹 Step 2: Mount Google Drive
-```python
+🔹 Step 2: Mount Google Drive:
+
 from google.colab import drive
 drive.mount('/content/drive')
-```
+
 🔹 Step 3: Set Dataset Path
-```python
+
 dataset_path = '/content/drive/MyDrive/Computational_Intelligence/NSL_KDD'
-```
+
 🔹 Step 4: Run Data Preprocessing
 Label Cleaning
 Categorical Encoding
 Missing Value Handling
 Feature Standardization
+
 🔹 Step 5: Run PSO Feature Selection
 ⚙️ PSO Parameters
-```text
 Particles: 20
 Iterations: 25
 Inertia: 0.72
 Acceleration coefficients: 1.49, 1.49
-```
+
+
 🔹 Step 6: Generate AIS Detectors
 ⚙️ AIS Parameters
-```text
+
 Number of detectors: 1000
 Mutation factor: 0.08
 Self-distance threshold: 0.6
-```
-🔹 Step 7: Create Hybrid Features
-```text
+
+🔹 Step 7: Create Hybrid Features:
+
 PSO-selected features + AIS anomaly features
-```
+
 🔹 Step 8: Train Models
 🧠 MLP
 🌲 Random Forest
 ⚡ XGBoost
 🤝 Hard Voting Ensemble
 🤝 Soft Voting Ensemble
+
 🔹 Step 9: Perform 10-Fold Cross-Validation
+
 🔹 Step 10: Evaluate Performance
 Metrics:
 Accuracy
@@ -116,32 +117,21 @@ F1-score
 ROC-AUC
 PR-AUC
 Confusion Matrix
+
 🔹 Step 11: Run SHAP Explainability
 Analyze feature contributions and model transparency.
+
 🔹 Step 12: Save Results
 Output directory:
-```text
-/content/hybrid_ids_outputs_cv
-```
----
-💾 Saved Files
-📄 hybrid_selected_features.csv  
-📄 train_ais_scores_full.csv  
-📄 hybrid_ensemble_predictions.csv  
-📄 final_test_model_results_summary.csv  
-📄 cv_summary_results.csv  
-📄 mlp_10fold_results.csv  
-📄 rf_10fold_results.csv  
-📄 xgb_10fold_results.csv  
-📄 pso_feature_importance.csv
+
 ---
 🔁 Reproducibility
-```python
+
 SEED = 42
 np.random.seed(SEED)
 random.seed(SEED)
 tf.random.set_seed(SEED)
-```
+
 ---
 📊 Expected Results
 ✅ Attack Detection Rate: 99.76%  
@@ -150,7 +140,7 @@ tf.random.set_seed(SEED)
 
 ---
 🔄 Project Workflow
-```text
+
 📂 Dataset Loading
         ↓
 🧹 Data Cleaning & Preprocessing
@@ -172,13 +162,13 @@ tf.random.set_seed(SEED)
 🔍 SHAP Explainability
         ↓
 💾 Result Saving
-```
+
 ---
 📝 Notes
 Use the same random seed to reproduce results.
 Update dataset paths according to your Google Drive structure.
 GPU runtime is recommended for faster MLP training.
 PSO and AIS detector generation may take time for large datasets.
+
 ---
-📚 Citation
-Intelligent Intrusion Detection System using Security-Aware PSO, Artificial Immune System, Ensemble Learning, and SHAP Explainability for IoT Security.
+
