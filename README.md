@@ -1,6 +1,6 @@
-# 🛡️ Intelligent Intrusion Detection System (IDS)
+# 🛡️ Intelligent Intrusion Detection System (IDS) Using Artificial Immune System (AIS)
 
-## Advanced Hybrid Intrusion Detection Framework Using Swarm Intelligence, Artificial Immune System, and Ensemble Learning
+## An Enhanced Artificial Immune System and Swarm Intelligence-Based Hybrid Ensemble Model for Network Intrusion Detection
 
 ---
 
