@@ -165,7 +165,7 @@ tf.random.set_seed(SEED)
 💾 Result Saving
 
 ---
-📝 Notes
+📝 Notes:
 Use the same random seed to reproduce results.
 Update dataset paths according to your Google Drive structure.
 GPU runtime is recommended for faster MLP training.
