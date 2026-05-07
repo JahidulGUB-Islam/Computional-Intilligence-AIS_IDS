@@ -1,88 +1,101 @@
-````markdown
 # 🛡️ Intelligent Intrusion Detection System (IDS)
 
-A robust and explainable Intrusion Detection System (IDS) framework that integrates **Swarm Intelligence**, **Artificial Immune System (AIS)**, and **Ensemble Learning** for advanced cyberattack detection in modern network and IoT environments.
-
-The proposed framework combines:
-
-- Security-aware and class-aware **Particle Swarm Optimization (PSO)** for intelligent feature selection
-- Improved **Negative Selection Algorithm (NSA)** for anomaly detector generation
-- Hybrid ensemble learning using **MLP**, **Random Forest**, and **XGBoost**
-- **SHAP Explainability** for transparent and interpretable cybersecurity analytics
-
-The framework is evaluated on benchmark intrusion detection datasets including:
-
-- NSL-KDD
-- UNSW-NB15
-- CICIoT2023
+## Advanced Hybrid Intrusion Detection Framework Using Swarm Intelligence, Artificial Immune System, and Ensemble Learning
 
 ---
 
-# 📖 Overview
+## 📖 Project Overview
 
-Modern cyberattacks are increasingly sophisticated, dynamic, and difficult to detect using traditional signature-based intrusion detection systems. This project introduces a hybrid intelligent IDS framework capable of:
+This project presents an advanced and explainable **Intelligent Intrusion Detection System (IDS)** designed for modern network and IoT security environments. The proposed framework integrates:
 
-- Detecting both known and unknown attacks
-- Improving minority attack detection
-- Reducing false positives
-- Enhancing feature optimization
-- Providing explainable AI-driven security insights
+- **Swarm Intelligence**
+- **Artificial Immune System (AIS)**
+- **Ensemble Machine Learning**
+- **Explainable Artificial Intelligence (XAI)**
 
-The framework leverages biologically inspired and swarm-based optimization techniques together with machine learning and deep learning models to improve overall intrusion detection performance.
+to improve intrusion detection accuracy, reduce false positives, and enhance detection of minority and zero-day attack patterns.
 
----
+The framework employs a **Security-Aware and Class-Aware Particle Swarm Optimization (PSO)** algorithm for optimal feature selection and an enhanced **Negative Selection Algorithm (NSA)** for intelligent anomaly detector generation. Furthermore, multiple machine learning and deep learning classifiers including **MLP**, **Random Forest**, and **XGBoost** are combined using ensemble voting strategies to improve detection robustness and generalization capability.
 
-# ✨ Main Features
+To enhance transparency and interpretability, the system integrates **SHAP-based Explainable AI (XAI)** analysis for feature contribution visualization and model decision interpretation.
 
-✅ Security-aware and class-aware PSO feature selection  
-✅ Improved Negative Selection Algorithm (NSA)  
-✅ Hybrid AIS-based anomaly feature generation  
-✅ Ensemble Learning (MLP + RF + XGBoost)  
-✅ Hard Voting and Soft Voting Ensembles  
-✅ 10-Fold Cross-Validation  
-✅ ROC and Precision-Recall Analysis  
-✅ SHAP Explainability  
-✅ Confusion Matrix Visualization  
-✅ Automatic Result Saving  
-✅ Reproducible Experimental Setup  
+The proposed IDS framework is evaluated using widely used benchmark cybersecurity datasets:
+
+- **NSL-KDD** — Classical Intrusion Detection Dataset
+- **UNSW-NB15** — Modern Network Attack Dataset
+- **CICIoT2023** — Large-Scale IoT Intrusion Dataset
 
 ---
 
-# 🖥️ Required Environment
+# ✨ Core Features
 
-| Component | Requirement |
+- ✅ Security-Aware and Class-Aware PSO Feature Selection
+- ✅ Improved Negative Selection Algorithm (NSA)
+- ✅ AIS-Based Hybrid Anomaly Feature Engineering
+- ✅ Ensemble Learning Framework (MLP + RF + XGBoost)
+- ✅ Hard Voting and Soft Voting Ensemble Strategies
+- ✅ 10-Fold Cross-Validation
+- ✅ ROC Curve and Precision-Recall Analysis
+- ✅ SHAP-Based Explainable AI (XAI)
+- ✅ Confusion Matrix Visualization
+- ✅ Automatic Result and Figure Saving
+- ✅ Reproducible Experimental Setup
+
+---
+
+# 🧠 Proposed Framework Architecture
+
+```text
+📂 Dataset Acquisition
+          ↓
+🧹 Data Cleaning & Preprocessing
+          ↓
+🔤 Encoding & Feature Standardization
+          ↓
+🧠 Security-Aware PSO Feature Selection
+          ↓
+🛡️ Improved AIS-Based Negative Selection
+          ↓
+⚙️ Hybrid Feature Construction
+          ↓
+🤖 MLP, RF & XGBoost Training
+          ↓
+🤝 Ensemble Voting Mechanism
+          ↓
+📈 Cross-Validation & Performance Evaluation
+          ↓
+🔍 SHAP Explainability Analysis
+          ↓
+💾 Result & Model Saving
+```
+
+---
+
+# 🖥️ Experimental Environment
+
+| Component | Specification |
 |---|---|
 | Programming Language | Python 3.x |
-| Development Environment | Google Colab |
-| Hardware | GPU Runtime Recommended |
-| Storage | Google Drive Mounted |
+| Development Platform | Google Colab |
+| Hardware Support | GPU Runtime Recommended |
+| Storage | Google Drive |
+| Deep Learning Framework | TensorFlow / Keras |
 
 ---
 
 # 📦 Required Dependencies
 
-```python
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-tensorflow
-xgboost
-shap
-```
-
-## Install Missing Packages
+Install all required libraries before running the notebook.
 
 ```bash
-pip install -q xgboost shap
+pip install -q numpy pandas matplotlib seaborn scikit-learn tensorflow xgboost shap
 ```
 
 ---
 
-# 📂 Dataset Setup
+# 📂 Dataset Configuration
 
-Place datasets in Google Drive using the following structure:
+Store the datasets in Google Drive using the following directory structure:
 
 ```text
 /content/drive/MyDrive/Computational_Intelligence/NSL_KDD
@@ -90,7 +103,7 @@ Place datasets in Google Drive using the following structure:
 /content/drive/MyDrive/Computational_Intelligence/UNSW_NB15
 ```
 
-## Example Structure
+## Example Dataset Structure
 
 ```text
 NSL_KDD/
@@ -100,11 +113,11 @@ NSL_KDD/
 
 ---
 
-# 🚀 Steps to Reproduce Results
+# 🚀 Reproduction Procedure
 
-## 🔹 Step 1: Open the Colab Notebook
+## 🔹 Step 1: Open the Google Colab Notebook
 
-Open the provided Google Colab notebook.
+Launch the provided notebook using Google Colab.
 
 ---
 
@@ -117,7 +130,7 @@ drive.mount('/content/drive')
 
 ---
 
-## 🔹 Step 3: Set Dataset Path
+## 🔹 Step 3: Configure Dataset Path
 
 ```python
 dataset_path = '/content/drive/MyDrive/Computational_Intelligence/NSL_KDD'
@@ -125,54 +138,56 @@ dataset_path = '/content/drive/MyDrive/Computational_Intelligence/NSL_KDD'
 
 ---
 
-## 🔹 Step 4: Run Data Preprocessing
+## 🔹 Step 4: Data Preprocessing
 
-The preprocessing stage includes:
+The preprocessing pipeline includes:
 
-- Label Cleaning
 - Missing Value Handling
+- Label Cleaning
 - Categorical Encoding
+- Feature Normalization
 - Feature Standardization
 
 ---
 
-## 🔹 Step 5: Run PSO Feature Selection
+## 🔹 Step 5: Security-Aware PSO Feature Selection
 
-### ⚙️ PSO Parameters
+### ⚙️ PSO Configuration
 
 | Parameter | Value |
 |---|---|
 | Number of Particles | 20 |
 | Maximum Iterations | 25 |
 | Inertia Weight | 0.72 |
-| Acceleration Coefficients | 1.49, 1.49 |
+| Cognitive Coefficient | 1.49 |
+| Social Coefficient | 1.49 |
 
 ---
 
-## 🔹 Step 6: Generate AIS Detectors
+## 🔹 Step 6: AIS Detector Generation
 
-### ⚙️ AIS Parameters
+### ⚙️ Negative Selection Parameters
 
 | Parameter | Value |
 |---|---|
 | Number of Detectors | 1000 |
 | Mutation Factor | 0.08 |
-| Self-distance Threshold | 0.6 |
+| Self-Distance Threshold | 0.6 |
 
 ---
 
-## 🔹 Step 7: Create Hybrid Features
+## 🔹 Step 7: Hybrid Feature Engineering
 
-Combine:
+Generate a hybrid feature space by combining:
 
-- PSO-selected optimized features
-- AIS-generated anomaly features
+- Optimized PSO-selected features
+- AIS-generated anomaly-aware features
 
 ---
 
-## 🔹 Step 8: Train Models
+## 🔹 Step 8: Model Training
 
-### 🧠 Machine Learning Models
+### 🤖 Implemented Models
 
 - Multi-Layer Perceptron (MLP)
 - Random Forest (RF)
@@ -182,50 +197,52 @@ Combine:
 
 ---
 
-## 🔹 Step 9: Perform 10-Fold Cross-Validation
+## 🔹 Step 9: Cross-Validation
 
-Cross-validation is used to ensure robust and generalized performance evaluation.
+Perform **10-Fold Cross-Validation** to ensure generalized and unbiased model evaluation.
 
 ---
 
-## 🔹 Step 10: Evaluate Performance
+## 🔹 Step 10: Performance Evaluation
 
 ### 📊 Evaluation Metrics
 
 - Accuracy
 - Precision
 - Recall
-- F1-score
+- F1-Score
 - ROC-AUC
 - PR-AUC
 - Confusion Matrix
+- Attack Detection Rate (ADR)
 
 ---
 
-## 🔹 Step 11: Run SHAP Explainability
+## 🔹 Step 11: Explainability Analysis
 
-SHAP analysis is used to:
+SHAP explainability is integrated to:
 
 - Interpret model decisions
-- Identify important security features
-- Improve transparency and trustworthiness
+- Identify important intrusion features
+- Improve model transparency
+- Support trustworthy AI-based cybersecurity analysis
 
 ---
 
-## 🔹 Step 12: Save Results
+## 🔹 Step 12: Result Saving
 
-All outputs including:
+Automatically save:
 
-- Metrics
-- Figures
-- Confusion Matrices
+- Trained Models
+- Performance Metrics
 - SHAP Visualizations
-
-are automatically saved to the output directory.
+- ROC Curves
+- Confusion Matrices
+- Experimental Figures
 
 ---
 
-# 🔁 Reproducibility
+# 🔁 Reproducibility Configuration
 
 ```python
 SEED = 42
@@ -241,9 +258,11 @@ tf.random.set_seed(SEED)
 
 ---
 
-# 📊 Expected Results
+# 📊 Experimental Results
 
-| Metric | Performance |
+The proposed framework achieved highly competitive intrusion detection performance across benchmark datasets.
+
+| Performance Metric | Result |
 |---|---|
 | Accuracy | 99.67% |
 | Recall | 99.23% |
@@ -251,51 +270,23 @@ tf.random.set_seed(SEED)
 
 ---
 
-# 🔄 Project Workflow
-
-```text
-📂 Dataset Loading
-        ↓
-🧹 Data Cleaning & Preprocessing
-        ↓
-🔤 Categorical Encoding & Standardization
-        ↓
-🧠 Security-Aware PSO Feature Selection
-        ↓
-🛡️ Improved Negative Selection Algorithm
-        ↓
-⚙️ Hybrid Feature Construction
-        ↓
-🤖 MLP, RF & XGBoost Training
-        ↓
-🤝 Hard & Soft Voting Ensemble
-        ↓
-📈 Evaluation & Cross-Validation
-        ↓
-🔍 SHAP Explainability
-        ↓
-💾 Result Saving
-```
-
----
-
 # 📌 Research Contributions
 
-- Developed a security-aware and class-aware PSO-based feature selection framework
-- Proposed an improved AIS-based Negative Selection Algorithm
-- Integrated hybrid anomaly-aware feature engineering
-- Combined deep learning and ensemble learning for robust IDS performance
-- Applied SHAP explainability for transparent cybersecurity analytics
+- Proposed a Security-Aware and Class-Aware PSO-based feature optimization framework
+- Developed an enhanced AIS-based Negative Selection Algorithm for anomaly detection
+- Designed a hybrid anomaly-aware feature engineering strategy
+- Integrated ensemble learning for improved intrusion detection robustness
+- Applied SHAP-based explainability for interpretable cybersecurity analytics
 - Evaluated the framework on multiple benchmark IDS datasets
 
 ---
 
-# 📝 Notes
+# 📝 Important Notes
 
-- Use the same random seed to reproduce results
-- Update dataset paths according to your Google Drive structure
-- GPU runtime is recommended for faster MLP training
-- PSO and AIS detector generation may take time for large datasets
+- Use the same random seed to reproduce experimental results
+- Update dataset paths according to your Google Drive configuration
+- GPU runtime is strongly recommended for efficient deep learning training
+- PSO optimization and AIS detector generation may require additional computation time for large-scale datasets
 
 ---
 
@@ -309,7 +300,7 @@ Georgia Southern University
 
 # 📄 License
 
-MIT License
+This project is licensed under the **MIT License**.
 
 ```text
 MIT License
@@ -340,5 +331,4 @@ copies of the Software.
 
 # 🔒 Keywords
 
-`Intrusion Detection System` • `Cybersecurity` • `Artificial Immune System` • `Particle Swarm Optimization` • `XGBoost` • `Random Forest` • `MLP` • `SHAP Explainability` • `IoT Security` • `Ensemble Learning`
-````
+`Intrusion Detection System (IDS)` • `Cybersecurity` • `Artificial Immune System` • `Particle Swarm Optimization` • `XGBoost` • `Random Forest` • `MLP` • `SHAP Explainability` • `IoT Security` • `Ensemble Learning` • `Explainable AI`
