@@ -300,32 +300,10 @@ Georgia Southern University
 
 # 📄 License
 
-This project is licensed under the **MIT License**.
-
-```text
-MIT License
-
+This repository is intended for academic and research purposes.
 Copyright (c) 2026 Md. Jahidul Islam
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software.
-```
 
----
-
-# ⭐ Citation
-
-```bibtex
-@article{jahidul2026ids,
-  title={Intelligent Intrusion Detection System using Swarm Intelligence, Artificial Immune System, and Ensemble Learning},
-  author={Islam, Md. Jahidul},
-  journal={Research Project},
-  year={2026}
-}
-```
 
 ---
 
